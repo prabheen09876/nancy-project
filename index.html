@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Junge&family=Madimi+One&display=swap"
+    
+        rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        .container {
+
+            position: relative;
+            width: 60%;
+            height: 70vh;
+
+            display: flex;
+
+
+        }
+        .blur span {
+            display: flex;
+            align-items: start;
+        }
+
+        .blur {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: #ffffff20;
+            width: 100%;
+            height: 100%;
+            backdrop-filter: blur(80px);
+            -webkit-backdrop-filter: blur(80px);
+            border-top: 1px solid;
+            border-image: linear-gradient(to right, transparent 20%, #020202, transparent 80%) 0 0 0 0;
+            z-index: 20;
+            border-radius: 30px;
+            padding: 2%;
+            padding: 6% 8%;
+        }
+
+        .noise {
+            position: absolute;
+            border-radius: 30px;
+            inset: 0;
+            background-image: url("https://upload.wikimedia.org/wikipedia/commons/9/9a/512x512_Dissolve_Noise_Texture.png");
+            background-size: 256px;
+            mix-blend-mode: overlay;
+            opacity: 0.5;
+            pointer-events: none;
+            z-index: 20;
+        }
+
+        span{
+
+            font-size: 98px;
+            color: #251225;
+            font-family: outfit;
+            letter-spacing: -6px;
+            font-weight: bold;
+
+        }
+  
+
+    
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html"> <button>
+                    <h2>My profile</h2>
+                </button></a>
+            <div id="btns">
+                <button><a href="index.html"><span>Home</span></a></button>
+                <button> <a href="gallery.html">Gallery</a></button>
+                <button> <a href="hobbies.html">Hobbies</a></button> <a></a>
+                <button> <a href="about.html">About</a></button>
+            </div>
+        </nav>
+    </header>
+    <div id="hero">
+
+
+        <div class="container">
+            <div class="blur">
+                <span>Welcomeeee</span>
+                <span>To My</span>
+                <span>Website</span>
+            </div>
+            <div class="noise"></div>
+
+
+
+        </div>
+        <div id="hero2" class="container">
+            <img src="Untitled (9).png" alt="">
+            <div class="blur">
+               
+            </div>
+            <div class="noise"></div>
+            
+        </div>
+    </div>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
